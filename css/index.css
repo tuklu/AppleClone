@@ -94,7 +94,6 @@ nav {
 .Store a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .Mac-wrapper {
   width: auto;
@@ -113,7 +112,6 @@ nav {
 .Mac a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .iPad-wrapper {
   width: auto;
@@ -132,7 +130,6 @@ nav {
 .iPad a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .iPhone-wrapper {
   width: auto;
@@ -151,7 +148,6 @@ nav {
 .iPhone a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .Watch-wrapper {
   width: auto;
@@ -170,7 +166,6 @@ nav {
 .Watch a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .AirPods-wrapper {
   width: auto;
@@ -189,7 +184,6 @@ nav {
 .AirPods a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .TV-Home-wrapper {
   width: auto;
@@ -208,7 +202,6 @@ nav {
 .TV-Home a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .Entertainment-wrapper {
   width: auto;
@@ -227,7 +220,6 @@ nav {
 .Entertainment a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .Accessories-wrapper {
   width: auto;
@@ -246,7 +238,6 @@ nav {
 .Accessories a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .Support-wrapper {
   width: auto;
@@ -265,7 +256,6 @@ nav {
 .Support a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  white-space: nowrap;
 }
 .find-wrapper{
   width: 31px;
