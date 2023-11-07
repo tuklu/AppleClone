@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap'); */
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -41,7 +41,6 @@ nav {
   display: flex;
   justify-content:center;
   align-items: center;
-  /* padding: 0px 16%; */
 }
 .nav {
   width: 100vw;
@@ -52,28 +51,19 @@ nav {
   z-index: 500;
 }
 .nav-main {
-  width: 60vw;
+  width: 67vw;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid red; */
-}
-.nav-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 100%;
 }
 .logo-wrapper{
-  padding: 0, 8px;
-  width: 100%;
+  width: 30px;
   height: 100%;
+  padding: 0, 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .logo {
   width: 14px;
@@ -83,83 +73,228 @@ nav {
   width: 100%;
   height: 100%;
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.Store-wrapper {
   width: auto;
-  /* border: 2px solid red; */
-
-}
- .nav-links ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  /* gap: 3vw; */
-  font-size: 12px;
-}
-
-.nav-links ul li{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
-
-.nav-links ul li a{
-  justify-content: space-between;
+.Store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.Store a {
   color: rgba(255, 255, 255, .8);
   font-size: 12px;
-  -webkit-text-stroke-width: -2px;
   white-space: nowrap;
 }
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Mac-wrapper {
+  width: auto;
   height: 100%;
-  /* flex: 1; */
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Mac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.Mac a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.iPad-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iPad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.iPad a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.iPhone-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.iPhone a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.Watch-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.Watch a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.AirPods-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AirPods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.AirPods a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.TV-Home-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TV-Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.TV-Home a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.Entertainment-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Entertainment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.Entertainment a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.Accessories-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Accessories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.Accessories a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.Support-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.Support a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  white-space: nowrap;
 }
 .find-wrapper{
-  /* padding-left: 0px, 8px;
   width: 30px;
-  height: 44px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-
+  height: 100%;
+  padding-left: 0px, 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .find { */
-  /* background-image: url(/assets/icons/find.svg);
-  background-size: contain;
-  background-repeat: no-repeat; */
-  /* width: 15px;
-  height: 44px;
-  padding-left: 0px, 8px; */
-  /* margin: auto; */
-
+.find {
+  width: 15px;
+  height: 100%;
 }
-/* .bag-wrapper{ */
-  /* padding-left: 0px, 8px;
+.find svg {
+  width: 100%;
+  height: 100%;
+}
+.bag-wrapper{
   width: 30px;
-  height: 44px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center;
+  height: 100%;
+  padding-left: 0px, 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-.bag { */
-  /* background-image: url(/assets/icons/bag.svg);
-  background-size: contain;
-  background-repeat: no-repeat; */
-  /* width: 14px;
-  height: 44px;
-  padding-left: 0px, 8px; */
-  /* margin: auto; */
-
+.bag {
+  width: 14px;
+  height: 100%;
+}
+.bag svg {
+  width: 100%;
+  height: 100%;
 }
 
 
