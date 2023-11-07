@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 nav {
   width: 100vw;
+  min-width: 320px;
   /* min-height: 44px; */
   /* height: 2.95vmax; */
   height: 44px;
@@ -52,7 +53,8 @@ nav {
   position: absolute;
 }
 .nav-main {
-  width: 67vw;
+  width: 100%;
+  max-width: 1024px;
   height: 100%;
   display: flex;
   justify-content: space-between;
