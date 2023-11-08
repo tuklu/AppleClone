@@ -1,14 +1,16 @@
-:root{
-  --nav-color: rgba(255, 255, 255, .8);
+:root {
+  --nav-color: rgba(255, 255, 255, 0.8);
 }
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
   /* overscroll-behavior: ; */
 }
@@ -36,13 +38,13 @@ nav {
   /* min-height: 44px; */
   /* height: 2.95vmax; */
   height: 44px;
-  background-color: rgba(22, 22, 23, .8);
+  background-color: rgba(22, 22, 23, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   position: fixed;
   z-index: 999;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 .nav {
@@ -59,7 +61,7 @@ nav {
   max-width: 1024px;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav-flyout-menu {
@@ -70,14 +72,14 @@ nav {
   justify-content: inherit;
   align-items: inherit;
 }
-.apple-icon{
+.apple-icon {
   width: auto;
   height: inherit;
   display: inherit;
   justify-content: center;
   align-items: inherit;
 }
-.logo-wrapper{
+.logo-wrapper {
   width: 30px;
   height: 100%;
   padding: 0 8px;
@@ -101,13 +103,13 @@ nav {
 .logo svg path {
   fill: var(--nav-color);
 }
-.alt-text{
+.alt-text {
   width: 1px;
   height: 100%;
   margin-inline-start: 4px;
   pointer-events: none;
   position: absolute;
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(0 0 99.9% 99.9%);
   overflow: hidden;
 }
@@ -142,10 +144,10 @@ nav {
   display: inherit;
   justify-content: center;
   align-items: center;
-  pointer-events: none; /* Disable pointer events on the anchor tag */
+  pointer-events: none;
 }
 .Store-wrapper a {
-  pointer-events: none; /* Disable pointer events on the anchor tag */
+  pointer-events: none;
 }
 .Store::before {
   content: "Store";
@@ -154,11 +156,11 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
 
-.nav-item-2{
+.nav-item-2 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -166,7 +168,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-mac{
+.nav-mac {
   width: auto;
   height: inherit;
   display: inherit;
@@ -191,10 +193,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-3{
+.nav-item-3 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -202,7 +204,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-ipad{
+.nav-ipad {
   width: auto;
   height: inherit;
   display: inherit;
@@ -227,10 +229,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-4{
+.nav-item-4 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -238,7 +240,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-iphone{
+.nav-iphone {
   width: auto;
   height: inherit;
   display: inherit;
@@ -263,10 +265,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-5{
+.nav-item-5 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -274,7 +276,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-watch{
+.nav-watch {
   width: auto;
   height: inherit;
   display: inherit;
@@ -299,10 +301,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-6{
+.nav-item-6 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -310,7 +312,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-airpods{
+.nav-airpods {
   width: auto;
   height: inherit;
   display: inherit;
@@ -335,10 +337,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-7{
+.nav-item-7 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -346,7 +348,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-tv-home{
+.nav-tv-home {
   width: auto;
   height: inherit;
   display: inherit;
@@ -371,10 +373,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-8{
+.nav-item-8 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -382,7 +384,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-entertainment{
+.nav-entertainment {
   width: auto;
   height: inherit;
   display: inherit;
@@ -407,10 +409,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-9{
+.nav-item-9 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -418,7 +420,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-accessories{
+.nav-accessories {
   width: auto;
   height: inherit;
   display: inherit;
@@ -443,10 +445,10 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-.nav-item-10{
+.nav-item-10 {
   list-style: none;
   width: auto;
   height: inherit;
@@ -454,7 +456,7 @@ nav {
   justify-content: center;
   align-items: inherit;
 }
-.nav-support{
+.nav-support {
   width: auto;
   height: inherit;
   display: inherit;
@@ -479,20 +481,22 @@ nav {
   color: var(--nav-color);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
-
-.find-icon{
+.right {
+  display: none;
+}
+.find-icon {
   width: auto;
-  height: inherit;
+  height: auto;
   display: inherit;
   justify-content: center;
   align-items: inherit;
 }
-.find-wrapper{
-  width: 30px;
-  height: 100%;
+.find-wrapper {
+  width: 31px;
+  height: 44px;
   padding: 0 8px;
   display: inherit;
   justify-content: inherit;
@@ -508,20 +512,20 @@ nav {
 }
 .find svg {
   width: inherit;
-  height: inherit;
+  height: 100%;
   pointer-events: none;
 }
 .find svg path {
   fill: var(--nav-color);
 }
-.bag-icon{
+.bag-icon {
   width: auto;
   height: inherit;
   display: inherit;
   justify-content: center;
   align-items: inherit;
 }
-.bag-wrapper{
+.bag-wrapper {
   width: 30px;
   height: 100%;
   padding: 0 8px;
@@ -545,19 +549,41 @@ nav {
 .bag svg path {
   fill: var(--nav-color);
 }
+.hamburger-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: max-content;
+  pointer-events: none;
+}
+.bar::before,
+.bar input {
+  content: "";
+  height: 1px;
+  width: 18px;
+  background: var(--nav-color);
+  border-radius: 999px;
+}
+.bar input {
+  appearance: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  pointer-events: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.bar input:checked {
+  background-color: #25ce5b;
+}
 
 
 
@@ -565,56 +591,68 @@ nav {
 
 /*Small devices with screen less then 833  */
 @media only screen and (max-width: 833px) {
-  nav, .nav {
+  nav,
+  .nav {
     /* min-height: 48px;
     height: 5.64vmax; */
     height: 48px;
   }
-  .logo-wrapper{
+  .logo-wrapper {
     width: 47px;
     height: 100%;
     padding: 0 16px;
   }
   .find-wrapper {
-  width: 48px;
-  height: 100%;
-  padding: 0 16px;
+    width: 48px;
+    height: 48px;
+    padding: 0 16px;
   }
   .bag-wrapper {
-  width: 48px;
-  height: 100%;
-  padding: 0 16px;
+    width: 48px;
+    height: 48px;
+    padding: 0 16px;
   }
-  .nav-links{
+  .nav-links {
     display: none;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 /*Small devices with screen less then 735px  */
 @media only screen and (max-width: 735px) {
-  nav, .nav {
+  nav,
+  .nav {
     /* min-height: 48px;
     height: 5.64vmax; */
     height: 48px;
   }
   .nav-main {
-    width: 100%
+    width: 100%;
   }
-  .logo-wrapper{
+  .logo-wrapper {
     width: 47px;
     height: 100%;
     padding: 0 16px;
   }
   .find-wrapper {
-  width: 48px;
-  height: 100%;
-  padding: 0 16px;
+    width: 48px;
+    height: 48px;
+    padding: 0 16px;
   }
   .bag-wrapper {
-  width: 48px;
-  height: 100%;
-  padding: 0 16px;
+    width: 48px;
+    height: 48px;
+    padding: 0 16px;
   }
-  .nav-links{
+  .nav-links {
     display: none;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
