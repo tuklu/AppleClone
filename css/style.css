@@ -1,5 +1,6 @@
 :root{
   --nav-color: rgba(255, 255, 255, .8);
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -58,7 +59,7 @@ nav {
   max-width: 1024px;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .nav-flyout-menu {
@@ -96,6 +97,9 @@ nav {
   width: inherit;
   height: inherit;
   pointer-events: none;
+}
+.logo svg path {
+  fill: var(--nav-color);
 }
 .alt-text{
   width: 1px;
@@ -507,89 +511,40 @@ nav {
   height: inherit;
   pointer-events: none;
 }
-/* .find::before {
-  content: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.45 14.45 14.08 14.08">
-      <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z" fill="rgba(255, 255, 255, .8)"/>
-    </svg>;
-  width: max-content;
-  height: 100%;
-  color: var(--nav-color);
-  /* font-size: 12px; */
-  /* font-weight: 400; */
-  /* letter-spacing: -.01em; */
-  /* line-height: 1; */
-} */
-.alt-text{
-  width: 1px;
-  height: 100%;
-  margin-inline-start: 4px;
-  pointer-events: none;
-  position: absolute;
-  clip: rect(1px,1px,1px,1px);
-  clip-path: inset(0 0 99.9% 99.9%);
-  overflow: hidden;
+.find svg path {
+  fill: var(--nav-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-.find-wrapper{
-  width: 31px;
-  height: 100%;
-  padding: 0 8px;
-  display: flex;
+.bag-icon{
+  width: auto;
+  height: inherit;
+  display: inherit;
   justify-content: center;
-  align-items: center;
-}
-.find {
-  width: 100%;
-  height: 100%;
-}
-.find svg {
-  width: 100%;
-  height: 100%;
+  align-items: inherit;
 }
 .bag-wrapper{
   width: 30px;
   height: 100%;
   padding: 0 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
 }
 .bag {
   width: 100%;
   height: 100%;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  pointer-events: none;
 }
 .bag svg {
-  width: 100%;
-  height: 100%;
+  width: inherit;
+  height: inherit;
+  pointer-events: none;
 }
- */
-
-
-
-
-
-
+.bag svg path {
+  fill: var(--nav-color);
+}
 
 
 
@@ -662,4 +617,4 @@ nav {
   .nav-links{
     display: none;
   }
-  }
+}
