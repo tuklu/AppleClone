@@ -1,0 +1,665 @@
+:root{
+  --nav-color: rgba(255, 255, 255, .8);
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+  /* overscroll-behavior: ; */
+}
+body::-webkit-scrollbar {
+  width: 8px !important;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #737373 !important;
+  border-radius: 10px !important;
+}
+body::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #4f4f4f !important;
+}
+.main {
+  height: 1000vh;
+  width: 100vw;
+  position: relative;
+}
+nav {
+  width: 100vw;
+  min-width: 320px;
+  /* min-height: 44px; */
+  /* height: 2.95vmax; */
+  height: 44px;
+  background-color: rgba(22, 22, 23, .8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.nav {
+  width: 100vw;
+  min-height: 44px;
+  height: 2.95vmax;
+  background: repeating-linear-gradient(#1d1d1f 45%, #ffffff, #1d1d1f 45%);
+  filter: opacity(94%);
+  z-index: 500;
+  position: absolute;
+}
+.nav-main {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-flyout-menu {
+  list-style: none;
+  width: inherit;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.apple-icon{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.logo-wrapper{
+  width: 30px;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  pointer-events: none;
+}
+.logo svg {
+  width: inherit;
+  height: inherit;
+  pointer-events: none;
+}
+.alt-text{
+  width: 1px;
+  height: 100%;
+  margin-inline-start: 4px;
+  pointer-events: none;
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  clip-path: inset(0 0 99.9% 99.9%);
+  overflow: hidden;
+}
+.nav-lists {
+  width: auto;
+  height: 100%;
+  display: inherit;
+  justify-content: space-between;
+  align-items: inherit;
+}
+.nav-item-1 {
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+  pointer-events: auto; /* Enable pointer events on the parent */
+}
+.nav-store {
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  /* pointer-events: none; */
+}
+.Store-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Disable pointer events on the anchor tag */
+}
+.Store-wrapper a {
+  pointer-events: none; /* Disable pointer events on the anchor tag */
+}
+.Store::before {
+  content: "Store";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+
+.nav-item-2{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-mac{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.Mac-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.Mac-wrapper a {
+  pointer-events: none;
+}
+.Mac::before {
+  content: "Mac";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-3{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-ipad{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.iPad-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.iPad-wrapper a {
+  pointer-events: none;
+}
+.iPad::before {
+  content: "iPad";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-4{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-iphone{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.iPhone-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.iPhone-wrapper a {
+  pointer-events: none;
+}
+.iPhone::before {
+  content: "iPhone";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-5{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-watch{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.Watch-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.Watch-wrapper a {
+  pointer-events: none;
+}
+.Watch::before {
+  content: "Watch";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-6{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-airpods{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.AirPods-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.AirPods-wrapper a {
+  pointer-events: none;
+}
+.AirPods::before {
+  content: "AirPods";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-7{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-tv-home{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.TV-Home-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.TV-Home-wrapper a {
+  pointer-events: none;
+}
+.TV-Home::before {
+  content: "TV & Home";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-8{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-entertainment{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.Entertainment-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.Entertainment-wrapper a {
+  pointer-events: none;
+}
+.Entertainment::before {
+  content: "Entertainment";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-9{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-accessories{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.Accessories-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.Accessories-wrapper a {
+  pointer-events: none;
+}
+.Accessories::before {
+  content: "Accessories";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+.nav-item-10{
+  list-style: none;
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.nav-support{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.Support-wrapper {
+  width: auto;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.Support-wrapper a {
+  pointer-events: none;
+}
+.Support::before {
+  content: "Support";
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+
+.find-icon{
+  width: auto;
+  height: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+}
+.find-wrapper{
+  width: 30px;
+  height: 100%;
+  padding: 0 8px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.find {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  pointer-events: none;
+}
+.find svg {
+  width: inherit;
+  height: inherit;
+  pointer-events: none;
+}
+/* .find::before {
+  content: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.45 14.45 14.08 14.08">
+      <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z" fill="rgba(255, 255, 255, .8)"/>
+    </svg>;
+  width: max-content;
+  height: 100%;
+  color: var(--nav-color);
+  /* font-size: 12px; */
+  /* font-weight: 400; */
+  /* letter-spacing: -.01em; */
+  /* line-height: 1; */
+} */
+.alt-text{
+  width: 1px;
+  height: 100%;
+  margin-inline-start: 4px;
+  pointer-events: none;
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  clip-path: inset(0 0 99.9% 99.9%);
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.find-wrapper{
+  width: 31px;
+  height: 100%;
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find {
+  width: 100%;
+  height: 100%;
+}
+.find svg {
+  width: 100%;
+  height: 100%;
+}
+.bag-wrapper{
+  width: 30px;
+  height: 100%;
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bag {
+  width: 100%;
+  height: 100%;
+}
+.bag svg {
+  width: 100%;
+  height: 100%;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+
+/*Small devices with screen less then 833  */
+@media only screen and (max-width: 833px) {
+  nav, .nav {
+    /* min-height: 48px;
+    height: 5.64vmax; */
+    height: 48px;
+  }
+  .logo-wrapper{
+    width: 47px;
+    height: 100%;
+    padding: 0 16px;
+  }
+  .find-wrapper {
+  width: 48px;
+  height: 100%;
+  padding: 0 16px;
+  }
+  .bag-wrapper {
+  width: 48px;
+  height: 100%;
+  padding: 0 16px;
+  }
+  .nav-links{
+    display: none;
+  }
+}
+/*Small devices with screen less then 735px  */
+@media only screen and (max-width: 735px) {
+  nav, .nav {
+    /* min-height: 48px;
+    height: 5.64vmax; */
+    height: 48px;
+  }
+  .nav-main {
+    width: 100%
+  }
+  .logo-wrapper{
+    width: 47px;
+    height: 100%;
+    padding: 0 16px;
+  }
+  .find-wrapper {
+  width: 48px;
+  height: 100%;
+  padding: 0 16px;
+  }
+  .bag-wrapper {
+  width: 48px;
+  height: 100%;
+  padding: 0 16px;
+  }
+  .nav-links{
+    display: none;
+  }
+  }
