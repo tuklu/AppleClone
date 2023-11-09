@@ -1,5 +1,7 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.8);
+  --nav-background-color:rgba(22, 22, 23, 0.8);
+  --nav-backdrop-filter: saturate(180%) blur(20px);
   --mobile-nav-height: 0px;
   --nav-height: calc(44px + var(--mobile-nav-height))
 }
@@ -34,26 +36,28 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100vw;
   position: relative;
 }
+/* Fix Nav bar */
 nav {
   width: 100vw;
   min-width: 320px;
   height: var(--nav-height);
-  background-color: rgba(22, 22, 23, 0.8);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background-color: var(--nav-background-color);
+  backdrop-filter: var(--nav-backdrop-filter);
+  -webkit-backdrop-filter: var(--nav-backdrop-filter);
   position: fixed;
   z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* Top Hidden navbar */
 .nav {
   width: 100vw;
   height: var(--nav-height);
   background: linear-gradient(#1D1D1F calc(var(--nav-height) - 4px), #fff 0%);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  z-index: 500;
+  backdrop-filter: var(--nav-backdrop-filter);
+  -webkit-backdrop-filter: var(--nav-backdrop-filter);
+  z-index: 1;
   position: absolute;
 }
 .nav-main {
