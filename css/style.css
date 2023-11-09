@@ -1,5 +1,7 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.8);
+  --mobile-nav-height: 0px;
+  --nav-height: calc(44px + var(--mobile-nav-height))
 }
 * {
   box-sizing: border-box;
@@ -35,9 +37,7 @@ body::-webkit-scrollbar-thumb:hover {
 nav {
   width: 100vw;
   min-width: 320px;
-  /* min-height: 44px; */
-  /* height: 2.95vmax; */
-  height: 44px;
+  height: var(--nav-height);
   background-color: rgba(22, 22, 23, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -49,10 +49,10 @@ nav {
 }
 .nav {
   width: 100vw;
-  min-height: 44px;
-  height: 2.95vmax;
-  background: repeating-linear-gradient(#1d1d1f 45%, #ffffff, #1d1d1f 45%);
-  filter: opacity(94%);
+  height: var(--nav-height);
+  background: linear-gradient(#1D1D1F calc(var(--nav-height) - 4px), #fff 0%);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   z-index: 500;
   position: absolute;
 }
@@ -81,7 +81,7 @@ nav {
 }
 .logo-wrapper {
   width: 30px;
-  height: 100%;
+  height: var(--nav-height);
   padding: 0 8px;
   display: inherit;
   justify-content: inherit;
@@ -496,7 +496,7 @@ nav {
 }
 .find-wrapper {
   width: 31px;
-  height: 44px;
+  height: var(--nav-height);
   padding: 0 8px;
   display: inherit;
   justify-content: inherit;
@@ -551,7 +551,7 @@ nav {
 }
 .hamburger-icon {
   width: 48px;
-  height: 48px;
+  height: var(--nav-height);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -586,16 +586,29 @@ nav {
 }
 
 
+/* Body */
+
+/* .container {
+  height: ;
+} */
+
+
+
+
+
+
+
+
+
+
+
 
 /*Responsive*/
 
 /*Small devices with screen less then 833  */
 @media only screen and (max-width: 833px) {
-  nav,
-  .nav {
-    /* min-height: 48px;
-    height: 5.64vmax; */
-    height: 48px;
+  :root {
+    --mobile-nav-height: 4px;
   }
   .logo-wrapper {
     width: 47px;
@@ -604,12 +617,12 @@ nav {
   }
   .find-wrapper {
     width: 48px;
-    height: 48px;
+    height: calc((--nav-height) - 1px);
     padding: 0 16px;
   }
   .bag-wrapper {
     width: 48px;
-    height: 48px;
+    height: var(--nav-height);
     padding: 0 16px;
   }
   .nav-links {
@@ -624,10 +637,8 @@ nav {
 /*Small devices with screen less then 735px  */
 @media only screen and (max-width: 735px) {
   nav,
-  .nav {
-    /* min-height: 48px;
-    height: 5.64vmax; */
-    height: 48px;
+  :root {
+    --mobile-nav-height: 4px;
   }
   .nav-main {
     width: 100%;
@@ -639,12 +650,12 @@ nav {
   }
   .find-wrapper {
     width: 48px;
-    height: 48px;
+    height: calc((--nav-height) - 1px);
     padding: 0 16px;
   }
   .bag-wrapper {
     width: 48px;
-    height: 48px;
+    height: var(--nav-height);
     padding: 0 16px;
   }
   .nav-links {
